@@ -13,7 +13,7 @@ for (const file of commandFiles) {
 }
 
 client.on('ready', () => {
-    console.log('online')
+    console.log('Repl coded bot is online!')
 })
 
 client.on("error", console.error);
@@ -38,4 +38,4 @@ client.once("message", async message => {
     }
 })
 
-client.login("ODYyNTk1MzU0MzE0NDA3OTM2.YOaohg.2ygsNHkG_J2hBNEs2gi8p16e3aI");
+client.login(process.env.token);
